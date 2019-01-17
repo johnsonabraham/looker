@@ -421,7 +421,12 @@ explore: customer_report_summary {
 
 explore: customers {}
 
-explore: 1_sample {}
+explore: 1_sample {
+  access_filter: {
+    field: customer_id
+    user_attribute: cust_id
+  }
+}
 
 explore: customers_bkp {}
 
