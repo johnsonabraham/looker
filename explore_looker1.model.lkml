@@ -421,6 +421,7 @@ explore: customer_report_summary {
 
 explore: customers {}
 
+# User Attributes
 explore: 1_sample {
   access_filter: {
     field: customer_id

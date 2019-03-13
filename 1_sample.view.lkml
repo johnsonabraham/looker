@@ -68,10 +68,11 @@ view: 1_sample {
     sql: ${TABLE}.plan_id ;;
   }
 
-  measure: total_compute_cost{
+  measure: total_compute_cost {
     type: sum
     sql: ${TABLE}.compute_annual_cost ;;
     value_format_name: usd
+    drill_fields: [instance_name, total_compute_cost]
   }
 
   measure: total_network_cost{
